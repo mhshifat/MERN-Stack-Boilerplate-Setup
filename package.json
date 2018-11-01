@@ -8,7 +8,7 @@
     "npm": "6.4.1"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "node ./build/bundle.js",
     "dev": "webpack ./server.js --mode=development --watch",
     "prod": "webpack ./server.js --mode=production",
     "back-server": "node-dev --notify=false ./build/bundle.js",
