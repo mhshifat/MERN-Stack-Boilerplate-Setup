@@ -9,6 +9,7 @@
   },
   "scripts": {
     "start": "node ./build/bundle.js",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build",
     "dev": "webpack ./server.js --mode=development --watch",
     "prod": "webpack ./server.js --mode=production",
     "back-server": "node-dev --notify=false ./build/bundle.js",
